@@ -1,0 +1,204 @@
+/* Google Fonts - Refined Choices */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --bg-color: #fcfaf7; /* Off-white/Cream */
+    --accent-color: #2c3e50; /* Deep Navy/Charcoal */
+    --text-color: #1a1a1a;
+    --text-muted: #666;
+    --card-bg: #ffffff;
+    --polaroid-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Cinematic Intro */
+.intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.intro-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.4;
+    filter: grayscale(0.5);
+    z-index: -1;
+}
+
+.intro-content {
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.intro h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s forwards 0.5s;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s forwards 1s;
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Section Styling */
+section {
+    padding: 8rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+/* Timeline/Memory Grid */
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    align-items: center;
+}
+
+.memory-card {
+    position: relative;
+    perspective: 1000px;
+}
+
+.polaroid {
+    background: #fff;
+    padding: 1.5rem 1.5rem 4rem 1.5rem;
+    box-shadow: var(--polaroid-shadow);
+    transform: rotate(-2deg);
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.polaroid:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: sepia(0.2) contrast(1.1);
+}
+
+.polaroid-caption {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: var(--text-color);
+}
+
+/* Horizontal Gallery */
+.horizontal-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 2rem 0;
+    scrollbar-width: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-item {
+    display: inline-block;
+    width: 400px;
+    margin-right: 2rem;
+    vertical-align: top;
+}
+
+/* Special High-End Image Section */
+.hero-image-full {
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-image-full::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-image-full h2 {
+    color: white;
+    font-size: 4rem;
+    z-index: 1;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Floating Elements (Subtle) */
+.grain-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/1k_filmgrain.png/1024px-1k_filmgrain.png');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Footer */
+footer {
+    padding: 6rem 2rem;
+    text-align: center;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .memory-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 2rem; }
+}

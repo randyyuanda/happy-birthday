@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana | Our Story</title>
+    <meta name="description" content="A cinematic journey of our favorite memories. Happy Birthday, Nana.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="grain-overlay"></div>
+
+    <!-- Background Music (Taylor Swift - Lover) -->
+    <!-- Note: Autoplay might be blocked by browsers until user interaction -->
+    <div id="music-container" style="display: none;">
+        <iframe width="0" height="0" src="https://www.youtube.com/embed/hub-vSPrUvo?autoplay=1&loop=1&playlist=hub-vSPrUvo" frameborder="0" allow="autoplay"></iframe>
+    </div>
+
+    <!-- Intro: The "Movie" Start -->
+    <section class="intro">
+        <div class="intro-content">
+            <h1 id="main-title">To Nana</h1>
+            <p>Our journey, from the first mile to forever.</p>
+            <div id="play-trigger" style="margin-top: 3rem; cursor: pointer; font-size: 0.9rem; letter-spacing: 2px; text-transform: uppercase;">
+                Press to Unfold our story <br>
+                <i class="fas fa-chevron-down" style="margin-top: 1rem; animation: bounce 2s infinite;"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 1: Simply You -->
+    <section id="beautiful">
+        <div class="memory-grid">
+            <div class="memory-card" data-aos="fade-right">
+                <div class="polaroid">
+                    <img src="beautifulwithflower.jpeg" alt="Nana with flowers">
+                    <div class="polaroid-caption">Simply Radiant.</div>
+                </div>
+            </div>
+            <div class="text-content">
+                <h2 class="section-title" style="text-align: left;">The most beautiful face.</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">You and flowers—a match made in heaven. But even the most beautiful bouquet is second best when you're in the frame.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Adventures -->
+    <section id="touring" style="background: #f0ede9;">
+        <h2 class="section-title">Where it all began...</h2>
+        <div class="memory-grid">
+            <div class="text-content">
+                <h3 style="font-size: 2rem; margin-bottom: 1rem;">Our First Touring.</h3>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">The wind on our faces and the road ahead. That first trip wasn't just about the destination; it was about realizing I wanted you as my co-pilot forever.</p>
+            </div>
+            <div class="memory-card" data-aos="fade-left">
+                <div class="polaroid" style="transform: rotate(3deg);">
+                    <img src="touring.jpg" alt="Our first touring adventure">
+                    <div class="polaroid-caption">The First Road Trip.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Anniversaries -->
+    <section id="anniversary">
+        <div class="memory-grid">
+            <div class="memory-card" data-aos="zoom-in">
+                <div class="polaroid" style="transform: rotate(-2deg);">
+                    <img src="bestphotoofus.jpeg" alt="Our first anniversary">
+                    <div class="polaroid-caption">365 Days of Us.</div>
+                </div>
+            </div>
+            <div class="text-content">
+                <h2 class="section-title" style="text-align: left;">Our First Milestone.</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">One year of laughter, growth, and building something beautiful. This photo captures the essence of what "us" means.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Valentine's Studio -->
+    <section id="valentine" style="background: #fdf2f2;">
+        <h2 class="section-title">Last Valentine's Day</h2>
+        <div class="memory-grid" style="grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div class="memory-card" data-aos="fade-up">
+                <div class="polaroid" style="transform: rotate(-3deg);">
+                    <img src="valentine1.jpeg" alt="Valentine Photo 1">
+                </div>
+            </div>
+            <div class="memory-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="polaroid" style="transform: rotate(2deg);">
+                    <img src="photostudio.JPG" alt="Studio Session">
+                </div>
+            </div>
+            <div class="memory-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="polaroid" style="transform: rotate(-1deg);">
+                    <img src="valentine2.jpeg" alt="Valentine Photo 2">
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="font-style: italic; color: var(--text-muted);">Capturing our love in the studio, but feeling it everywhere else.</p>
+        </div>
+    </section>
+
+    <!-- Section 5: Gaming together -->
+    <section id="games">
+        <div class="memory-grid">
+            <div class="text-content">
+                <h2 class="section-title" style="text-align: left;">My Favorite Player Two.</h2>
+                <p style="color: var(--text-muted); font-size: 1.1rem;">Whether we're winning or losing, I'd choose you as my teammate every single time.</p>
+            </div>
+            <div class="memory-card" data-aos="fade-left">
+                <div class="polaroid" style="transform: rotate(4deg);">
+                    <img src="game.jpeg" alt="Playing games together">
+                    <div class="polaroid-caption">Game On.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Masterpiece -->
+    <div class="hero-image-full" style="background-image: url('firstanniv.jpeg');">
+        <h2>Forever and Always.</h2>
+    </div>
+
+    <section style="text-align: center; padding: 10rem 2rem;">
+        <h2 style="font-size: 4rem; margin-bottom: 2rem;">Happy Birthday, Nana.</h2>
+        <p style="max-width: 600px; margin: 0 auto; color: var(--text-muted); font-size: 1.5rem; font-family: 'Playfair Display';">
+            "You're my, my, my, my... Lover."
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 | For Nana</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true
+        });
+    </script>
+</body>
+</html>
