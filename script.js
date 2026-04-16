@@ -2,9 +2,9 @@
 document.getElementById('play-trigger').addEventListener('click', () => {
     document.getElementById('beautiful').scrollIntoView({ behavior: 'smooth' });
     
-    // Attempt to play music if user interacts (browsers often require this)
+    // Attempt to play music if user interacts
     const musicContainer = document.getElementById('music-container');
-    musicContainer.innerHTML = `<iframe width="0" height="0" src="https://www.youtube.com/embed/hub-vSPrUvo?autoplay=1&loop=1&playlist=hub-vSPrUvo" frameborder="0" allow="autoplay"></iframe>`;
+    musicContainer.innerHTML = `<iframe src="https://audio.com/embed/audio/1773854073188204?theme=image&autoplay=1" style="display:block; border: none; height: 1px; width: 1px; opacity: 0;"></iframe>`;
 });
 
 // Parallax Effect for the Full-Width Hero
