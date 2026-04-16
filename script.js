@@ -4,7 +4,7 @@ document.getElementById('play-trigger').addEventListener('click', () => {
     
     // Attempt to play music if user interacts
     const musicContainer = document.getElementById('music-container');
-    musicContainer.innerHTML = `<iframe src="https://audio.com/embed/audio/1773854073188204?theme=image&autoplay=1" style="display:block; border: none; height: 1px; width: 1px; opacity: 0;"></iframe>`;
+    musicContainer.innerHTML = `<iframe src="https://audio.com/embed/audio/1773854073188204?theme=image&autoplay=1" allow="autoplay" style="border: none; height: 1px; width: 1px; opacity: 0;"></iframe>`;
 });
 
 // Parallax Effect for the Full-Width Hero

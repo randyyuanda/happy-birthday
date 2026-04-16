@@ -13,8 +13,8 @@
     <div class="grain-overlay"></div>
 
     <!-- Background Music (Audio.com) -->
-    <div id="music-container" style="display: none;">
-        <iframe src="https://audio.com/embed/audio/1773854073188204?theme=image" style="display:block; border: none; height: 0; width: 0;"></iframe>
+    <div id="music-container" style="position: absolute; left: -999px; top: -999px; overflow: hidden; width: 1px; height: 1px;">
+        <iframe src="https://audio.com/embed/audio/1773854073188204?theme=image" allow="autoplay" style="border: none; height: 1px; width: 1px;"></iframe>
     </div>
 
     <!-- Intro: The "Movie" Start -->
@@ -24,7 +24,6 @@
             <p>Our journey, from the first mile to forever.</p>
             <div id="play-trigger" class="btn-start">
                 <span>Begin our journey</span>
-                <span style="font-size: 0.6rem; opacity: 0.7;">(Music will play)</span>
                 <i class="fas fa-chevron-down" style="animation: bounce 2s infinite;"></i>
             </div>
         </div>
