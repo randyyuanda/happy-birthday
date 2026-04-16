@@ -198,7 +198,62 @@ footer {
     color: #fff;
 }
 
-@media (max-width: 768px) {
-    .memory-grid { grid-template-columns: 1fr; }
-    .section-title { font-size: 2rem; }
+/* Love Letter Styling */
+.letter-card {
+    background: #fff;
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 4rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    position: relative;
+    text-align: left;
+    line-height: 1.8;
+    border: 1px solid #f0ede9;
+}
+
+.letter-card::before {
+    content: '';
+    position: absolute;
+    top: 10px; left: 10px; right: 10px; bottom: 10px;
+    border: 1px solid #f0ede9;
+    pointer-events: none;
+}
+
+.letter-content {
+    font-size: 1.25rem;
+    color: #444;
+    white-space: pre-line;
+}
+
+.signature {
+    margin-top: 3rem;
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.btn-start {
+    margin-top: 3rem;
+    padding: 1rem 2.5rem;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-start:hover {
+    background: white;
+    color: black;
+    border-color: white;
 }
