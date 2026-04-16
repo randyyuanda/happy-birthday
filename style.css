@@ -257,3 +257,44 @@ footer {
     color: black;
     border-color: white;
 }
+
+@media (max-width: 768px) {
+    .memory-grid { 
+        grid-template-columns: 1fr !important; 
+        gap: 2rem;
+    }
+
+    .section-title { 
+        font-size: 2.2rem; 
+        margin-bottom: 2rem;
+    }
+
+    .polaroid {
+        padding: 1rem 1rem 3rem 1rem;
+    }
+
+    .polaroid img {
+        height: auto; 
+        max-height: 450px;
+        object-fit: contain;
+        background: #eee;
+    }
+
+    .letter-card {
+        padding: 2rem 1.5rem;
+        margin: 2rem 1rem;
+    }
+
+    .letter-content {
+        font-size: 1.1rem;
+    }
+
+    .hero-image-full {
+        height: 60vh;
+        background-attachment: scroll; 
+    }
+
+    .intro h1 {
+        font-size: 3rem;
+    }
+}
